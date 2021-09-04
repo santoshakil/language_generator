@@ -1,0 +1,18 @@
+import 'package:flutter/material.dart';
+
+class TestFile extends StatelessWidget {
+  const TestFile({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        const Text('Hello Text'), // I need 'Hello Text'
+        CustomButton(
+          text: 'Button Text', // I need 'Button Text'
+          leftH: false,
+        ),
+      ],
+    );
+  }
+}
