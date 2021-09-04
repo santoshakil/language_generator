@@ -5,7 +5,7 @@ import 'package:translator/translator.dart';
 
 Future<void> main(List<String> arguments) async {
   final translator = GoogleTranslator();
-  var _dir = Directory('project lib dir');
+  var _dir = Directory('/home/santo/Projects/Flutter/flutterc/lib');
   var _fileEN = File('Generated/app_en.arb');
   var _fileBN = File('Generated/app_bn.arb');
   var _files = _dir.listSync(recursive: true).whereType<File>().toList();
